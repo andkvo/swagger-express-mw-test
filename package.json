@@ -1,0 +1,18 @@
+{
+  "name": "express-mw-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "supervisor -w ./src ./src/index.js"
+  },
+  "author": "Andrew Kvochick",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "swagger-express-middleware": "^2.0.2"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
+}

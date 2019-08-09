@@ -1,0 +1,56 @@
+swagger: "2.0"
+
+info:
+  version: 1.0.0
+  title: Simple API
+  description: A simple API to learn how to write OpenAPI Specification
+
+paths:
+  /calendar-item:
+    get:
+      summary: Get calendar item details
+      description: Calendar item details
+      responses:
+        '200':
+          description: calendar item details
+          schema:
+            type: string
+            example: calendar item default response
+  /subscription:
+    get:
+      summary: Get subscription details
+      description: Subscription details
+      responses:
+        '200':
+          description: Subscription details
+          schema:
+            type: string
+            example: subscription details default response
+    post:
+      summary: Create Subscription
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      description: Create subscription
+      parameters:
+        - in: body
+          name: subscription
+          description: subscription name
+          required: true
+          schema:
+            type: object
+            required:
+              - name
+              - amount
+            properties:
+                name:
+                  type: string
+                startDate:
+                  type: string
+                  format: date
+                amount:
+                  type: number
+      responses:
+        200:
+          description: Hooray
