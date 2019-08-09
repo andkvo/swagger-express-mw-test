@@ -4,4 +4,4 @@ A test drive of `swagger-express-middleware` with an eye towards using a Swagger
 
 Spec out more endpoints in PushPress.yaml and they will be added as mocks. Override the defaults by creating the endpoints.
 
-Add more validation by adding requirements to the parameters. Override the defaults by creating custom validation.
+Add more validation by adding requirements to the parameters in PushPress.yaml. Override the defaults by creating custom validation.
